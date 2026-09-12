@@ -2,6 +2,8 @@
 
 ![](https://images.pexels.com/photos/7360389/pexels-photo-7360389.jpeg)
 
+**Play it here: [hypedmike.github.io/chat-impostor](https://hypedmike.github.io/chat-impostor/)**
+
 Chat-alayzer is a party game in the "impostor" family (à la Spyfall/Undercover). Instead of using a fixed word list, it mines the secret word from a WhatsApp chat export you provide: it counts word frequencies across the chat and picks the game's secret word (and, separately, the impostors' word) weighted by how often each word was actually used in that conversation.
 
 The game runs entirely in the browser. There is no backend server — the chat export never leaves the device. The text analysis (parsing, word counting, stopword filtering, weighted picking) is implemented in Rust and compiled to WebAssembly, which the React frontend loads and calls directly.
